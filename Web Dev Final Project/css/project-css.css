@@ -1,0 +1,203 @@
+/*!
+ * Start Bootstrap - Blog Home (https://startbootstrap.com/template-overviews/blog-home)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-blog-home/blob/master/LICENSE)
+ */
+/*test*/
+/*http://kylegoslan.co.uk/bootstrap-4-hamburger-menu-animation/*/
+.icon-bar {
+    width: 22px;
+    height: 2px;
+    background-color: #B6B6B6;
+    display: block;
+    transition: all 0.2s;
+    margin-top: 4px
+}
+
+.navbar-toggler {
+    border: none;
+    background: transparent !important;
+}
+
+.navbar-toggler .top-bar {
+    transform: rotate(45deg);
+    transform-origin: 10% 10%;
+}
+
+.navbar-toggler .middle-bar {
+    opacity: 0;
+}
+
+.navbar-toggler .bottom-bar {
+    transform: rotate(-45deg);
+    transform-origin: 10% 90%;
+}
+
+.navbar-toggler.collapsed .top-bar {
+    transform: rotate(0);
+}
+
+.navbar-toggler.collapsed .middle-bar {
+    opacity: 1;
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+    transform: rotate(0);
+}
+
+body {
+    padding-top: 56px;
+}
+
+.card-title {
+    text-align: center;
+}
+
+.center {
+    text-align: center;
+}
+
+.center-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-image {
+    max-width: 500px;
+}
+
+.header-image-max-scale {
+    max-height: 1000px;
+    max-width: 1500px;
+}
+
+.full-scale-button {
+    width: 100%
+}
+
+.fixed-footer-margin {
+    padding-top: 119.31px;
+}
+
+/* side nav w3schools
+/* The side navigation menu */
+.sidenav {
+    height: 100%;
+    /* 100% Full-height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 999;
+    /* Stay on top */
+    top: 0;
+    /* Stay at the top */
+    right: 0;
+    background-color: #111;
+    /* Black*/
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 60px;
+    /* Place content 60px from the top */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-right: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-right .5s;
+    padding: 20px;
+}
+
+.bodyopen {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.pm-menu-btn {
+    border: 0;
+    background: transparent;
+    color: #9a9da0;
+    height: 32px;
+    width: 38px;
+    position: relative;
+    display: none;
+}
+
+.pm-menu-btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.pm-menu-btn span {
+    width: 26px;
+    height: 2px;
+    background: #9a9da0;
+    display: block;
+    margin: 6px 0;
+    border-radius: 5px;
+    transition: all 0.2s;
+
+}
+
+.pm-menu-btn.active span:nth-child(1) {
+    transform: rotate(45deg);
+}
+
+.pm-menu-btn.active span:nth-child(2) {
+    position: absolute;
+    opacity: 0;
+}
+
+.pm-menu-btn.active span:nth-child(3) {
+    position: absolute;
+    top: 9px;
+    transform: rotate(-45deg);
+}
+
+.sidenav.open {
+    width: 250px;
+}
+
+@media screen and (max-width: 991px) {
+    .sidenav {
+        padding-top: 56px;
+    }
+
+    .pm-menu-btn {
+        display: block;
+    }
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
